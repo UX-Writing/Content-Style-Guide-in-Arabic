@@ -1,0 +1,31 @@
+# Sidebar navigation
+
+- label: 'نظرة عامة'
+  link: '/overview'
+- label: 'الصوت والنبرة'
+  link: '/voice-and-tone'
+- label: 'طُرق الكتابة الفعّالة'
+  link: '/actionable-language'
+- label: 'الأسلوب وآلية الكتابة'
+  link: '/style-and-mechanics'
+- label: 'قوائم الكلمات'
+  link: '/word-list'
+- label: 'المراجع والمصادر'
+  link: '/references'
+
+# - label: Usage
+#   items:
+#     - label: 'Creating docs'
+#       link: '/usage/creating-docs'
+#     - label: 'Navigation'
+#       link: '/usage/navigation'
+#     - label: 'Shadowing'
+#       link: '/usage/shadowing'
+#     - label: 'Using YAML files'
+#       link: '/usage/using-yaml-files'
+# - label: More
+  # items:
+  #   - label: FAQ
+  #     link: /faq
+  #   - label: 'Github'
+  #     link: https://github.com/jpedroschmitz/rocketdocs
