@@ -59,13 +59,11 @@ or using yarn
 To deploy this project run
 
 ```bash
-  cd  examples/gatsby-theme-docs
   npm run build
 ```
 
 or if you are using yarn
 ```bash
-  cd  examples/gatsby-theme-docs
   yarn build
 ```
 
@@ -78,8 +76,8 @@ Contributions are always welcome!
 You can contribute to the content using the following:
 
 1. Go to this path: `cd examples/gatsby-theme-docs/src/docs/`
-2. Change the content of the markdown files. You can add secitons, remove unused words, or edit the text.
-3. If you want to add a new page you have to to do 2 steps: first, add the new file in the docs folder. second, add the proper label and linke in the sidebar file in this pathe:
+2. Change the content of the markdown files. You can add sections, remove unused words, or edit the text.
+3. If you want to add a new page you have to to do 2 steps: first, add the new file in the docs folder. second, add the proper label and link in the sidebar file in this path:
 `cd examples/gatsby-theme-docs/src/config/sidebar.yml`
 ## Feedback
 
