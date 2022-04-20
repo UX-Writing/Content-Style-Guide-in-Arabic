@@ -11,7 +11,7 @@ module.exports = (options) => {
       siteDescription: `Easy to use Gatsby Theme to create documentation websites`,
       siteUrl: `https://rocketdocs.netlify.app`,
       siteAuthor: `@jpedroschmitz`,
-      siteImage: `/banner.png`,
+      siteImage: `/banner.jpg`,
       siteLanguage: `en`,
       basePath: themeOtions.basePath,
       docsPath: themeOtions.docsPath,

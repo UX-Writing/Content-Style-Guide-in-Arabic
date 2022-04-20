@@ -8,7 +8,7 @@ The project is based on the [Rocket Docs Gatsby theme](https://github.com/jpedro
 
 ## Screenshots
 
-![Guide Screenshot](https://github.com/UX-Writing/Content-Style-Guide-in-Arabic/blob/7cb172642688b8cf30dffd30c88ae691de29d24a/examples/gatsby-theme-docs/static/banner.png?raw=true)
+![Guide Screenshot](https://github.com/UX-Writing/Content-Style-Guide-in-Arabic/blob/7cb172642688b8cf30dffd30c88ae691de29d24a/examples/gatsby-theme-docs/static/banner.jpg?raw=true)
 
 
 ## Run Locally

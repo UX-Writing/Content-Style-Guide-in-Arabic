@@ -6,7 +6,7 @@
     siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
     siteUrl: `https://csg.uxwritingar.com/`,
     siteAuthor: `@UXWritingar`,
-    siteImage: `/banner.png`,
+    siteImage: `/banner.jpg`,
     siteLanguage: `ar`,
     themeColor: `#3182ce`,
     basePath: `/`,
