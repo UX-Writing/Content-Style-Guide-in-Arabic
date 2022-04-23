@@ -54,7 +54,7 @@ export default function Sidebar({ isMenuOpen }) {
     <Container isMenuOpen={isMenuOpen}>
       <LogoContainer style={{ padding: '0 30px' }}>
         <h2>
-          <Link to={basePath}>عنوان الموقع</Link>
+          <Link to={basePath}>الرئيسية</Link>
         </h2>
         {/**
         <Link to={basePath} aria-label="Go to home page">
