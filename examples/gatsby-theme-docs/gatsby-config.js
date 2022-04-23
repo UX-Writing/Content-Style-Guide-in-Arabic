@@ -1,6 +1,6 @@
   module.exports = {
   siteMetadata: {
-    siteTitle: `Rocket Docs`,
+    siteTitle: `Rocket Docs Modified`,
     defaultTitle: `Rocket Docs`,
     siteTitleShort: `Rocket Docs`,
     siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
