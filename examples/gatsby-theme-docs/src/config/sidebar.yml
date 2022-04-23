@@ -1,6 +1,5 @@
 # Sidebar navigation
 
-- Label: 'القائمة الرئيسية'
 - label: 'نظرة عامة'
   link: '/overview'
 - label: 'الصوت والنبرة'
