@@ -24,13 +24,13 @@
 
 <div class="usage-container">
   <div class="usage usage-yes">
-    <h3>صواب</h3>
+    <h3>✅ صواب</h3>
     <ul>
       <li>القراءة التالية</li>
     </ul>
   </div>
   <div class="usage usage-no">
-    <h3>خطأ</h3>
+    <h3>❌ خطأ</h3>
     <ul>
       <li>القراءة التالية.</li>
     </ul>
