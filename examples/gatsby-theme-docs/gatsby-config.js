@@ -1,8 +1,8 @@
   module.exports = {
   siteMetadata: {
-    siteTitle: `Rocket Docs Modified`,
-    defaultTitle: `Rocket Docs Modified`,
-    siteTitleShort: `Rocket Docs Modified`,
+    siteTitle: `دليل أسلوب كتابة المحتوى`,
+    defaultTitle: `دليل أسلوب كتابة المحتوى`,
+    siteTitleShort: `دليل أسلوب كتابة المحتوى`,
     siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
     siteUrl: `https://csg.uxwritingar.com/`,
     siteAuthor: `@UXWritingar`,
