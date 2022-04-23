@@ -1,9 +1,9 @@
   module.exports = {
   siteMetadata: {
-    siteTitle: `دليل أسلوب كتابة المحتوى`,
+    siteTitle: `دليل أسلوب كتابة المحتوى - منصّة تعلّم كتابة تجربة المستخدم بالعربية`,
     defaultTitle: `دليل أسلوب كتابة المحتوى`,
     siteTitleShort: `دليل أسلوب كتابة المحتوى`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
+    siteDescription: `دليل أسلوب كتابة المحتوى للمواقع الإلكترونية وتطبيقات الموبايل ولوحات التحكم`,
     siteUrl: `https://csg.uxwritingar.com/`,
     siteAuthor: `@UXWritingar`,
     siteImage: `/banner.jpg`,
