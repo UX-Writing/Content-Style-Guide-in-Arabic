@@ -55,7 +55,7 @@
 
 **للاطلاع على مزيد من التفاصيل**
 
-- [أهمية النبرة والصوت (TONE & VOICE) في كتابة تجربة المستخدم](https://uxwritingar.com/ux-writing/11830/) من NNG
+- [أهمية النبرة والصوت (TONE & VOICE) في كتابة تجربة المستخدم](https://uxwritingar.com/ux-writing/11830/) من UX Writing بالعربية
 
 ## ملاءمة السياق العاطفي
 
