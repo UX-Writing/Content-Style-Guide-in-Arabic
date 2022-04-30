@@ -77,10 +77,10 @@ export default function TableOfContents({ headings, disableTOC, contentRef }) {
                       <a
                         href={`#${headingSlug}`}
                         style={{
-                          color:
-                            activeHeading === headingSlug
-                              ? theme.colors.primary
-                              : theme.colors.text,
+                          color: theme.colors.text
+                            // activeHeading === headingSlug
+                            //   ? theme.colors.primary
+                            //   : theme.colors.text,
                         }}
                       >
                         {heading.value}

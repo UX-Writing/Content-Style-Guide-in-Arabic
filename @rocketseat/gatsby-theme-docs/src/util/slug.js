@@ -10,15 +10,18 @@
 //     ); // Removes all chars that aren't words, -, ´ or some latin characters (À Á Â Ã Ç É Ê Í Ó Ô Õ Ú à á â ã ç é ê í ó ô õ ú)
 // }
 
-
 // slug but keep Arabic letters
 export default function slugify(string) {
-  return string
-    .toString() // Cast to string
-    .toLowerCase() // Convert the string to lowercase letters
-    .trim() // Remove whitespace from both sides of a string
-    .replace(/\s/g, '-') // Replace each space with -
-    // keep Arabic letters ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي
-;
-
+	return (
+		string
+			.toString() // Cast to string
+			.toLowerCase() // Convert the string to lowercase letters
+			.trim() // Remove whitespace from both sides of a string
+			.replace(/\s/g, "-") // Replace each space with -
+			.replace(/[(|)|]/g, "") // Replace each brackets ")(" with nothing
+			.replace(/[؟]/g, "") // Replace each question mark? with nothing
+			.replace(/[،]/g, "") // Replace each question mark? with nothing
+			// keep Arabic letters ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي
+      // .replace(/[A-Za-z[ء-يًٌٍَُِّ]+/, '')
+	);
 }
