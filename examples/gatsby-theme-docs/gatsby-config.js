@@ -6,7 +6,7 @@
     siteDescription: `دليل أسلوب كتابة المحتوى للمواقع الإلكترونية وتطبيقات الموبايل ولوحات التحكم`,
     siteUrl: `https://csg.uxwritingar.com/`,
     siteAuthor: `@UXWritingar`,
-    siteImage: `/banner.jpg`,
+    siteImage: `/examples/gatsby-theme-docs/static/banner.jpg`,
     siteLanguage: `ar`,
     themeColor: `#3182ce`,
     basePath: `/`,
