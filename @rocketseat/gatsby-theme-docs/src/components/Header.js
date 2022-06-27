@@ -59,7 +59,7 @@ export default function Header({ handleMenuOpen }) {
       <button aria-label="Open sidebar" type="button" onClick={handleMenuOpen}>
         <GiHamburgerMenu size={23} aria-hidden="true" />
       </button>
-      <h2>{siteTitle}</h2>
+      <h2 style={{ marginRight: '20px' }}>{siteTitle}</h2>
     </Container>
   );
 }
