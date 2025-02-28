@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
 
   @media (max-width: 1200px) {
     position: relative;

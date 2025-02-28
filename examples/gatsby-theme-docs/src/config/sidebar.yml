@@ -13,19 +13,27 @@
 - label: 'المراجع والمصادر'
   link: '/references'
 
-# - label: Usage
-#   items:
-#     - label: 'Creating docs'
-#       link: '/usage/creating-docs'
-#     - label: 'Navigation'
-#       link: '/usage/navigation'
-#     - label: 'Shadowing'
-#       link: '/usage/shadowing'
-#     - label: 'Using YAML files'
-#       link: '/usage/using-yaml-files'
-# - label: More
-  # items:
-  #   - label: FAQ
-  #     link: /faq
-  #   - label: 'Github'
-  #     link: https://github.com/jpedroschmitz/rocketdocs
+# Examples
+
+#- label: 'Introduction'
+#  link: '/'
+#- label: 'Getting started'
+#  link: '/getting-started'
+#- label: Usage
+#  items:
+#    - label: 'Creating docs'
+#      link: '/usage/creating-docs'
+#    - label: 'Navigation'
+#      link: '/usage/navigation'
+#    - label: 'Customizing'
+#      link: '/usage/customizing'
+#    - label: 'Using YAML files'
+#      link: '/usage/using-yaml-files'
+#    - label: 'Remark Plugins'
+#      link: '/usage/remark-plugins'
+#- label: More
+#  items:
+#    - label: FAQ
+#      link: /faq
+#    - label: 'Github'
+#      link: https://github.com/jpedroschmitz/rocketdocs

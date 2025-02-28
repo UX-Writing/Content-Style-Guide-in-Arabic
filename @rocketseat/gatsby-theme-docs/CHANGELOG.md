@@ -1,5 +1,33 @@
 # @rocketseat/gatsby-theme-docs
 
+## 4.0.1
+
+### Patch Changes
+
+- [#156](https://github.com/jpedroschmitz/rocketdocs/pull/156) [`10de666`](https://github.com/jpedroschmitz/rocketdocs/commit/10de6661b08f5c9551c223ef26f027dbb18aa8e2) Thanks [@tekmaven](https://github.com/tekmaven)! - Fix peerDependencies to React 18
+
+## 4.0.0
+
+### Major Changes
+
+- [#150](https://github.com/jpedroschmitz/rocketdocs/pull/150) [`ed4b5b3`](https://github.com/jpedroschmitz/rocketdocs/commit/ed4b5b31dd60f732abced13d09df97671e9af828) Thanks [@tekmaven](https://github.com/tekmaven)! - Upgrade to Gatsby v5
+
+### Patch Changes
+
+- Updated dependencies [[`ed4b5b3`](https://github.com/jpedroschmitz/rocketdocs/commit/ed4b5b31dd60f732abced13d09df97671e9af828)]:
+  - @rocketseat/gatsby-theme-docs-core@4.0.0
+
+## 3.2.0
+
+### Minor Changes
+
+- [#146](https://github.com/jpedroschmitz/rocketdocs/pull/146) [`a4903ae`](https://github.com/jpedroschmitz/rocketdocs/commit/a4903ae1f5bb24cdb075b15f374135e7da554511) Thanks [@aaronamm](https://github.com/aaronamm)! - Add `gatsbyRemarkPlugins` option
+
+### Patch Changes
+
+- Updated dependencies [[`a4903ae`](https://github.com/jpedroschmitz/rocketdocs/commit/a4903ae1f5bb24cdb075b15f374135e7da554511)]:
+  - @rocketseat/gatsby-theme-docs-core@3.2.0
+
 ## 3.1.0
 
 ### Minor Changes

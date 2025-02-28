@@ -1,6 +1,6 @@
 /* @jsx jsx */
 import { useState, useRef, Fragment } from 'react';
-import { jsx, css } from '@emotion/react';
+import { jsx } from '@emotion/react';
 import PropTypes from 'prop-types';
 
 import TableOfContents from '../Docs/TOC';
@@ -11,8 +11,9 @@ import { Container, Main, Children } from './styles';
 
 export default function Layout({
   children,
-  disableTableOfContents,
+  // eslint-disable-next-line no-unused-vars
   title,
+  disableTableOfContents,
   headings,
 }) {
   const contentRef = useRef(null);
@@ -31,33 +32,7 @@ export default function Layout({
         <Sidebar isMenuOpen={isMenuOpen} />
         <Main>
           <Header handleMenuOpen={handleMenuOpen} />
-          {title && (
-            <h1
-              css={css`
-                display: none;
-
-                @media (max-width: 1200px) {
-                  display: block;
-                }
-              `}
-            >
-              {title}
-            </h1>
-          )}
-          <Children ref={contentRef}>
-            {title && (
-              <h1
-                css={css`
-                  @media (max-width: 1200px) {
-                    display: none;
-                  }
-                `}
-              >
-                {title}
-              </h1>
-            )}
-            {children}
-          </Children>
+          <Children ref={contentRef}>{children}</Children>
           <TableOfContents
             headings={headings}
             disableTOC={disableTOC}
@@ -75,7 +50,8 @@ Layout.propTypes = {
     PropTypes.node,
   ]).isRequired,
   disableTableOfContents: PropTypes.bool,
-  title: PropTypes.string,
+  // eslint-disable-next-line no-bitwise
+  title: PropTypes.string | undefined,
   headings: PropTypes.array,
 };
 

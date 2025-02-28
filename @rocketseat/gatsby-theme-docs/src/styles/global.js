@@ -7,7 +7,7 @@ export default function GlobalStyle() {
   return (
     <Global
       styles={css`
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
 
         *,
         *::after,
@@ -19,7 +19,7 @@ export default function GlobalStyle() {
 
         body {
           direction: rtl;
-          font-size: 1em;
+          font-size: 16px;
           font-family: 'Noto Naskh Arabic', serif;
           background-color: #f9f9f9;
           text-rendering: optimizelegibility;
@@ -66,15 +66,17 @@ export default function GlobalStyle() {
         }
 
         code.inline-code {
-          padding: 0.25rem;
-          border-radius: 0.25rem rem;
-          --bg-opacity: 1;
-          background-color: #faf5ff;
-          background-color: rgba(250, 245, 255, var(--bg-opacity));
-          --text-opacity: 1;
-          color: #3182ce;
-          font-size: 1rem;
-          font-family: 'Noto Kufi Arabic', sans-serif;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 1;
+          padding: 0.2em;
+          background-color: #44475a;
+          color: rgba(248, 248, 242);
+          font-size: 14px;
+          border-radius: 3px;
+          font-feature-settings: 'clig' 0, 'calt' 0;
+          font-variant: no-common-ligatures no-discretionary-ligatures
+            no-historical-ligatures no-contextual;
         }
 
         h1 code.inline-code,
@@ -169,7 +171,7 @@ export default function GlobalStyle() {
         ul,
         ol {
           color: ${theme.colors.text};
-          padding-right: 15px;
+          padding-left: 15px;
           margin-bottom: 16px;
 
           li {
@@ -180,10 +182,6 @@ export default function GlobalStyle() {
         li ul,
         li ol {
           margin-bottom: 0;
-        }
-
-        code {
-          direction: ltr !important;
         }
 
         .gatsby-highlight {
@@ -382,5 +380,3 @@ export default function GlobalStyle() {
     />
   );
 }
-
-// min 768px (for md and above)

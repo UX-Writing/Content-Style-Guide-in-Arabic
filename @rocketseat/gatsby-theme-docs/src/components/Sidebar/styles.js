@@ -40,7 +40,7 @@ export const Container = styled.aside`
   }
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled.h2`
   width: 100%;
 
   a {

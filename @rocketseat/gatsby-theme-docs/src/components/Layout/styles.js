@@ -42,7 +42,7 @@ export const Children = styled.div`
 
   @media (max-width: 1200px) {
     max-width: 100%;
-    padding-right: 0;
+    padding-left: 0;
     order: 3;
   }
 

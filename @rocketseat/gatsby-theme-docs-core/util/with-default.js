@@ -1,5 +1,6 @@
 module.exports = (themeOptions) => {
   const basePath = themeOptions.basePath || `/`;
+  const homePath = themeOptions.homePath || ``;
   const configPath = themeOptions.configPath || `config`;
   const docsPath = themeOptions.docsPath || `docs`;
   const yamlFilesPath = themeOptions.yamlFilesPath || `yamlFiles`;
@@ -7,10 +8,13 @@ module.exports = (themeOptions) => {
   const baseDir = themeOptions.baseDir || ``;
   const withMdx =
     themeOptions.withMdx === undefined ? true : themeOptions.withMdx;
+  const gatsbyRemarkPlugins = themeOptions.gatsbyRemarkPlugins || [];
+
   const { githubUrl, repositoryUrl = '' } = themeOptions;
 
   return {
     basePath,
+    homePath,
     configPath,
     docsPath,
     yamlFilesPath,
@@ -19,5 +23,6 @@ module.exports = (themeOptions) => {
     repositoryUrl,
     withMdx,
     branch,
+    gatsbyRemarkPlugins,
   };
 };

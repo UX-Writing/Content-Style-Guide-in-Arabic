@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 export const Container = styled.section`
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
@@ -16,7 +15,7 @@ export const Container = styled.section`
 
 export const Post = styled.div`
   transition: all 200ms;
-  ${({ isLeft }) => !isLeft && 'margin-right: auto;'}
+  ${({ isLeft }) => !isLeft && 'margin-left: auto;'}
 
   a {
     display: flex;

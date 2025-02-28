@@ -18,10 +18,10 @@ import Logo from '../Logo';
 
 function ListWithSubItems({ children, text }) {
   return (
-    <div>
+    <>
       <Heading>{text}</Heading>
       <SubItem>{children}</SubItem>
-    </div>
+    </>
   );
 }
 
@@ -52,17 +52,11 @@ export default function Sidebar({ isMenuOpen }) {
 
   return (
     <Container isMenuOpen={isMenuOpen}>
-      <LogoContainer style={{ padding: '0 30px' }}>
-        <h2>
-          <Link to={basePath}>الرئيسية</Link>
-        </h2>
-        {/**
-        <Link to={basePath} aria-label="Go to home page">
-          <Logo aria-hidden="true" />
+      <LogoContainer>
+        <Link to={basePath} aria-label="الرئيسية">
+          <Logo aria-hidden="true" style={{ marginLeft: '10px' }} /> الرئيسية
         </Link>
-         */}
       </LogoContainer>
-
       <nav>
         <List>
           {data.map(({ node: { label, link, items, id } }) => {

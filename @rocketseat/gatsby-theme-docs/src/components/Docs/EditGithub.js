@@ -24,7 +24,7 @@ export default function EditGithub({ repositoryEditUrl, repositoryProvider }) {
         `}
       >
         <MdEdit style={{ marginRight: '5px' }} />
-        Edit this page on {repositoryProvider}
+        تحرير هذه الصفحة على {repositoryProvider}
       </a>
     );
   }

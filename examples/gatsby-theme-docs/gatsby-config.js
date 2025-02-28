@@ -1,4 +1,4 @@
-  module.exports = {
+module.exports = {
   siteMetadata: {
     siteTitle: `دليل أسلوب كتابة المحتوى - منصّة تعلّم كتابة تجربة المستخدم بالعربية`,
     defaultTitle: `دليل أسلوب كتابة المحتوى`,
@@ -6,7 +6,7 @@
     siteDescription: `دليل أسلوب كتابة المحتوى للمواقع الإلكترونية وتطبيقات الموبايل ولوحات التحكم`,
     siteUrl: `https://csg.uxwritingar.com/`,
     siteAuthor: `@UXWritingar`,
-    siteImage: `/examples/gatsby-theme-docs/static/banner.jpg`,
+    siteImage: `/banner.jpg`,
     siteLanguage: `ar`,
     themeColor: `#3182ce`,
     basePath: `/`,
@@ -17,16 +17,18 @@
       options: {
         configPath: `src/config`,
         docsPath: `src/docs`,
+        homePath: `src/home`,
         yamlFilesPath: `src/yamlFiles`,
-        repositoryUrl: `https://github.com/jpedroschmitz/rocketdocs`,
+        repositoryUrl: `https://github.com/UX-Writing/Content-Style-Guide-in-Arabic`,
         baseDir: `examples/gatsby-theme-docs`,
+        gatsbyRemarkPlugins: [],
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rocket Docs`,
-        short_name: `Rocket Docs`,
+        name: `دليل أسلوب كتابة المحتوى`,
+        short_name: `دليل أسلوب كتابة المحتوى`,
         start_url: `/`,
         background_color: `#ffffff`,
         display: `standalone`,

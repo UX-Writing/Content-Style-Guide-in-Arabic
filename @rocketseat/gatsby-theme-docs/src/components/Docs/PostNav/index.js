@@ -9,7 +9,7 @@ export default function Docs({ prev, next }) {
   return (
     <Container>
       {prev && (
-        <Post isLeft>
+        <Post>
           <Link to={prev.link}>
             <MdKeyboardArrowRight />
             <div>
@@ -20,7 +20,7 @@ export default function Docs({ prev, next }) {
         </Post>
       )}
       {next && (
-        <Post>
+        <Post isLeft>
           <Link to={next.link}>
             <div>
               <p>التالي</p>
