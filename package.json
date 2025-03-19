@@ -11,7 +11,8 @@
     "commit": "cz",
     "dev": "cd examples/gatsby-theme-docs && gatsby develop",
     "build": "cd examples/gatsby-theme-docs && gatsby build",
-    "deploy": "git add . && git commit -m \"docs(index.mdx): new updates\n\n- new updates\" && git push && yarn build && cp -rfv examples/gatsby-theme-docs/public ../"
+    "deploy": "git add . && git commit -m \"docs(index.mdx): new updates\n\n- new updates\" && git push && yarn build && cp -rfv examples/gatsby-theme-docs/public ../",
+    "pull:build": "git pull && yarn build && cp -rfv examples/gatsby-theme-docs/public ../"
   },
   "engines": {
     "node": ">=14.15.0"
