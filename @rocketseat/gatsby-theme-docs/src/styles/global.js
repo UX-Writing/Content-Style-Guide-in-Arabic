@@ -7,7 +7,7 @@ export default function GlobalStyle() {
   return (
     <Global
       styles={css`
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
         *,
         *::after,
@@ -20,7 +20,7 @@ export default function GlobalStyle() {
         body {
           direction: rtl;
           font-size: 16px;
-          font-family: 'Noto Naskh Arabic', serif;
+          font-family: 'IBM Plex Sans Arabic', serif;
           background-color: #f9f9f9;
           text-rendering: optimizelegibility;
           -webkit-font-smoothing: antialiased;
