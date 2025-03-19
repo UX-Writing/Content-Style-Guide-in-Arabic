@@ -10,7 +10,8 @@
     "release": "changeset publish",
     "commit": "cz",
     "dev": "cd examples/gatsby-theme-docs && gatsby develop",
-    "build": "cd examples/gatsby-theme-docs && gatsby build"
+    "build": "cd examples/gatsby-theme-docs && gatsby build",
+    "deploy": "git add . && git commit -m \"docs(index.mdx): new updates\" && git push && yarn build && cp -rfv examples/gatsby-theme-docs/public ../"
   },
   "engines": {
     "node": ">=14.15.0"
