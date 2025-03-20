@@ -15,7 +15,6 @@ export default function TableOfContents({ headings, disableTOC, contentRef }) {
   const [offsets, setOffsets] = useState([]);
 
   const isMobile = width <= 1200;
-
   useEffect(() => {
     if (!isMobile || disableTOC) {
       const allHeadings = contentRef.current?.querySelectorAll(`h2, h3`);
@@ -39,7 +38,7 @@ export default function TableOfContents({ headings, disableTOC, contentRef }) {
 
   const activeHeading = useMemo(() => {
     if (!isMobile || disableTOC) {
-      const windowOffset = height / 2;
+      const windowOffset = height * 0.1;
       const scrollTop = y + windowOffset;
 
       if (offsets) {
