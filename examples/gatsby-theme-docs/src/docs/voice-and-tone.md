@@ -62,15 +62,15 @@ order: 02
 
 ### المواقف الإيجابية
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>كن مشجعًا وإيجابيًا</li>
       <li>عبر عن اهتمامك</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>لا تنسب الفضل لنفسك في نجاحهم</li>
@@ -81,15 +81,15 @@ order: 02
 
 ### المواقف المحايدة
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>عبر عن الثقة</li>
       <li>اربط الإجراء بالقيمة</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>لا تولِّد الشك</li>
@@ -100,15 +100,15 @@ order: 02
 
 ### المواقف السلبية
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>كن صادقًا ومباشرًا عند التحدث عن المشاكل ووضح الخطوات التالية</li>
       <li>استخدم لغة حوارية مباشرة</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>لا تقلل من حجم المشكلة</li>

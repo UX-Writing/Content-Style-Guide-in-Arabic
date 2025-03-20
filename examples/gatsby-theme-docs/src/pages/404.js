@@ -6,7 +6,7 @@ import Seo from '@rocketseat/gatsby-theme-docs/src/components/SEO';
 
 export default function NotFound() {
   return (
-    <Layout title="الصفحة مفقودة!">
+    <Layout>
       <Seo title="404: الصفحة مفقودة!" />
       <p>لقد وصلت إلى صفحة مفقودة. يؤسفنا ذلك.</p>
       <p>

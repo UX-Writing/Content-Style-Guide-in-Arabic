@@ -15,14 +15,14 @@ order: 04
 
 تجنب استخدام الاختصارات إن أمكن.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>سؤال</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>س</li>
@@ -42,14 +42,14 @@ order: 04
 
 استخدم صيغة المبني للمعلوم بدلاً من المبني للمجهول. ففي المبني للمعلوم يقوم الفاعل بالإجراء، بينما في المبني للمجهول يُنسب الإجراء المُتخذ في الجملة للفاعل.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>أضفت الكتاب إلى القائمة.</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>أُضيف الكتاب إلى القائمة.</li>
@@ -59,14 +59,14 @@ order: 04
 
 استخدم التلطف مع عدم تعيين مسؤولية الإجراء لخفض التوتر الذي تُسببه الرسالة.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>عنوان البريد الإلكتروني غير صحيح.</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>عنوان البريد الإلكتروني الذي أدخلته خاطئًا.</li>
@@ -78,15 +78,15 @@ order: 04
 
 نستخدم الحروف والأدوات مثل "هذا" و"هذه" و"من" في أحاديثنا للربط بين الجُمل والكلمات، وينبغي بالضرورة أيضًا إضافتها إلى النص المكتوب ليكون نصًا حواريًا. فعند إزالتها من الكتابة، يبدو النص معقدًا وغير مفهوم. ولكن هذه الإرشادات مرنة أيضًا، ويمكننا حذف تلك الأدوات والحروف عندما يتعلق الأمر بحد الطول.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>اختيار هذا الكتاب</li>
       <li>حفظ تغييراتك</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>اختيار كتاب</li>
@@ -99,14 +99,14 @@ order: 04
 
 تجنب أي إرشادات تضطر المستخدم إلى الانتقال بنظره لرؤية تصميم أو مخطط الصفحة أو العنصر.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>اختيار كتاب جديد.</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>اختيار كتاب</li>
@@ -119,15 +119,15 @@ order: 04
 
 استخدم الأرقام بالحساب في حالة وجودها في النص، ويتضمن ذلك الترتيب بالأرقام (أرقام ترتيب العناصر في القائمة).
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>لديك 3 اقتراحات جديدة</li>
       <li>ما زال لديك 5 أيام لمشاركة اقتراح</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>لديك ثلاثة اقتراحات جديدة</li>
@@ -138,8 +138,8 @@ order: 04
 
 عند الكتابة بالإنجليزية، يتم وضع فاصلة بين الأرقام التي يتجاوز عددها ٣.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>144</li>
@@ -150,8 +150,8 @@ order: 04
 
 عند الكتابة بلغات مثل الألمانية والسويدية والهولندية، يتم وضع نقطة مع الأرقام التي يتجاوز عددها ٣.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>144</li>
@@ -164,8 +164,8 @@ order: 04
 
 ينبغي كتابة أيام الأسبوع والشهور بالحروف، ويتم ترتيب الكتابة حسب المنطقة المحلية.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li><strong>الولايات المتحدة الأمريكية</strong></li>
@@ -182,8 +182,8 @@ order: 04
 
 استخدم لغة محايدة عند وصف التاريخ إن أمكن.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>اليوم</li>
@@ -200,14 +200,14 @@ order: 04
 
 استخدم الكسور بالصيغة الحسابية عند الإشارة إلى القياسات، ولا تكتبها بالحروف.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>½</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>1/2</li>
@@ -220,14 +220,14 @@ order: 04
 
 استخدم رمز النسبة المئوية ٪ بدلاً من كتابة "في المئة".
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>٢٪</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>اثنان بالمئة</li>
@@ -239,8 +239,8 @@ order: 04
 
 استخدم الشرطة القصيرة (`–`) للإشارة إلى نطاقات الأرقام، ولا تضع مسافات قبل الشرطة أو بعدها.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>مدة القراءة 10–20 دقيقة</li>
@@ -252,8 +252,8 @@ order: 04
 
 عند الكتابة عن عملات بالعربية نستخدم الاسم الكامل للعملة، ولا نضع نقاطًا مهما طال عدد الأرقام.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>1000 جنيه مصري</li>
@@ -266,8 +266,8 @@ order: 04
 
 لا تضع فواصل بين الأرقام، ولا تكتب رمز الدولة.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>1234567890</li>
@@ -281,8 +281,8 @@ order: 04
 
 استخدم الكلمة كاملة لتوضيح درجة الحرارة سواء كانت بالدرجة المئوية أو فهرنهايت.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>220 درجة مئوية</li>
@@ -295,8 +295,8 @@ order: 04
 
 استخدم الأرقام لكتابة التوقيت، مع كتابة صباحًا أو مساء بالحروف. يمكنك استخدام نظام التوقيت لمدة 12 ساعة أو 24 ساعة حسب ما هو مستخدم في المنطقة المحلية، ولكن عند الكتابة بنظام التوقيت 24 ساعة، ينبغي كتابة `0` قبل كتابة الوقت المكون من رقم واحد.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>5 مساء</li>
@@ -304,7 +304,7 @@ order: 04
       <li>06:30 ص</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>5 م</li>
@@ -316,8 +316,8 @@ order: 04
 
 استخدم الشرطة القصيرة (`–`) للإشارة إلى الفترة الزمنية. ولا تستخدم مسافات قبل الشرطة أو بعدها.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>8 صباحًا–12 مساء</li>
@@ -328,8 +328,8 @@ order: 04
 
 استخدم الأرقام عند الإشارة إلى مقدار الوقت، واكتب التمييز بالحروف مع ترك مسافة بينهما.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>تم الإرسال منذ 20 دقيقة</li>
@@ -342,14 +342,14 @@ order: 04
 
 ينبغي تضمين مسافة بين الرقم ووحدة القياس.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>200 جرام</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>200جرام</li>
@@ -363,8 +363,8 @@ order: 04
 
 استخدم النقطتين لعرض قائمة.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>يشتهر هذا الكتاب بثلاثة أفكار رئيسية وهي: الكائنات الفضائية والمغامرة والشعر.</li>
@@ -376,14 +376,14 @@ order: 04
 
 استخدم الفاصلة لفصل جملتين مرتبطتين للحفاظ على طول يسهل قراءته.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>هذا الكتاب هو أول عمل روائي طويل للكاتب، وقد فاز بعدة جوائز عالمية.</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>هذا الكتاب هو أول عمل روائي طويل للكاتب وقد فاز بعدة جوائز عالمية.</li>
@@ -395,8 +395,8 @@ order: 04
 
 استخدم الشرطة القصيرة (`–`) للإشار إلى [نطاق](#النطاقات) دون ترك مسافات.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>مدة القراءة 2-6 دقائق</li>
@@ -406,8 +406,8 @@ order: 04
 
 استخدم الشرطة الطويلة (`—`) دون ترك مسافات لفصل جملتين في فقرة واحدة.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>هذه السلسلة الجديدة—أول سلسلة خيال علمي—رائعة لمحبي الشعر.</li>
@@ -421,14 +421,14 @@ order: 04
 
 عند استخدام القطع الناقص لاقتطاع نص من سياقه، ينبغي القطع بعد حرفين على الأقل.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>العذراء والشعر ال...</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>العذراء والشعر ا…</li>
@@ -440,14 +440,14 @@ order: 04
 
 استخدم لغة إيجابية بدلاً من السلبية. فاللغة الإيجابية أسهل في القراءة والتعامل معها عن اللغة السلبية. وتعد إحدى الطرق المستخدمة للكشف عن اللغة السلبية هي البحث عن كلمات مثل "لا يمكنك" أو "لا تستطيع" وغيرها.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>يُرجى تحديث طريقة الدفع للوصول إلى حسابك.</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>لن تتمكن من الوصول إلى حسابك إن لم يتم تحديث طريقة الدفع.</li>
@@ -459,14 +459,14 @@ order: 04
 
 يمكن إساءة فهم الجُمل التي تبدأ بكلمات سلبية، لذا ينبغي تجنب استخدام الكلمات السلبية.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>تذكر حفظ طريقة الدفع الجديدة</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>لا تنسى حفظ طريقة الدفع الجديدة</li>
@@ -478,14 +478,14 @@ order: 04
 
 هناك خطأ شائع في كتابة الأسئلة، وهو عدم تكوين الجملة كسؤال. عادة ما يمكن حل هذه المشكلة بإضافة بعض الكلمات.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>لماذا يستحق كتاب "مكتوب على الجبين" القراءة ثانية؟</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>لماذا "مكتوب علي الجبين" ثانية؟</li>
@@ -505,8 +505,8 @@ order: 04
 
 استخدم لغة تركز على الشخص نفسه ولا تركز على تعريفه بإعاقة ما.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>أصحاب الهمم</li>
@@ -514,7 +514,7 @@ order: 04
       <li>أشخاص يتعايشون مع الإعاقات</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>المعاقون</li>
@@ -531,14 +531,14 @@ order: 04
 
 تجنب استخدام المصطلحات التي تشير إلى النوع.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>أصحاب الأعمال</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>رجال الأعمال</li>
@@ -552,15 +552,15 @@ order: 04
 
 توضح معظم اللغات أن التعبيرات الاصطلاحية هي جُمل شائعة ذات معنى محدد، لكن في الغالب يصعب ترجمتها إلى لغة أخرى. كما أنها قد تربك المترجمين للعثور على مكافئ لها. لذا يُفضل تجنب استخدامها تمامًا.
 
-<div class="usage-container">
-  <div class="usage usage-yes">
+<div className="usage-container">
+  <div className="usage usage-yes">
     <h3>صواب</h3>
     <ul>
       <li>فلنبدأ</li>
       <li>يمكن تغيير هذه المعلومات</li>
     </ul>
   </div>
-  <div class="usage usage-no">
+  <div className="usage usage-no">
     <h3>خطأ</h3>
     <ul>
       <li>الوقت من ذهب</li>

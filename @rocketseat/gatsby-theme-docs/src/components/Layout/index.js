@@ -9,13 +9,7 @@ import Header from '../Header';
 import Overlay from '../Overlay';
 import { Container, Main, Children } from './styles';
 
-export default function Layout({
-  children,
-  // eslint-disable-next-line no-unused-vars
-  title,
-  disableTableOfContents,
-  headings,
-}) {
+export default function Layout({ children, disableTableOfContents, headings }) {
   const contentRef = useRef(null);
   const [isMenuOpen, setMenuOpen] = useState(false);
   const disableTOC =
@@ -50,13 +44,10 @@ Layout.propTypes = {
     PropTypes.node,
   ]).isRequired,
   disableTableOfContents: PropTypes.bool,
-  // eslint-disable-next-line no-bitwise
-  title: PropTypes.string | undefined,
   headings: PropTypes.array,
 };
 
 Layout.defaultProps = {
   disableTableOfContents: false,
-  title: '',
   headings: null,
 };

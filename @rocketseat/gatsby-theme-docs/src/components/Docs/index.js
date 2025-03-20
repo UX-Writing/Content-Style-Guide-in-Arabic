@@ -17,7 +17,6 @@ export default function Docs({ mdx, pageContext, children }) {
       <SEO title={title} description={description} slug={slug} image={image} />
       <Layout
         disableTableOfContents={disableTableOfContents}
-        title={title}
         headings={headings}
       >
         {children}
