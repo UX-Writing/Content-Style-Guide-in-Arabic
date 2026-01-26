@@ -8,6 +8,8 @@
   link: '/actionable-language'
 - label: 'الأسلوب وآلية الكتابة'
   link: '/style-and-mechanics'
+- label: 'إمكانية الوصول'
+  link: '/accessibility'
 - label: 'قوائم الكلمات'
   link: '/word-list'
 - label: 'المراجع والمصادر'
