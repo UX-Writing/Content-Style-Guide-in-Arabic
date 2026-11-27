@@ -1,0 +1,41 @@
+- id: Search
+  translation: ابحث في الدليل
+
+- id: Edit this page
+  translation: عدّل هذه الصفحة على GitHub
+
+- id: Edit
+  translation: تعديل
+
+- id: Last modified by
+  translation: آخر تعديل بواسطة
+
+- id: Calendar
+  translation: التاريخ
+
+- id: Backward
+  translation: السابق
+
+- id: Forward
+  translation: التالي
+
+- id: Menu
+  translation: القائمة
+
+- id: Table of Contents
+  translation: محتويات الصفحة
+
+- id: Expand
+  translation: توسيع
+
+- id: Languages
+  translation: اللغات
+
+- id: Logo
+  translation: الشعار
+
+- id: Thumbnail
+  translation: صورة مصغّرة
+
+- id: bookSearchConfig
+  translation: '{ cache: true }'

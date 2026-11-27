@@ -4,14 +4,45 @@ locale  = 'ar'
 defaultContentLanguage = 'ar'
 publishDir = "/home/uxwriting/domains/csg.uxwritingar.com/public_html/public"
 theme = 'hugo-book'
+
+# Generate robots.txt (template in layouts/robots.txt)
+enableRobotsTXT = true
+
+# Read page dates from git so the footer can show the last change
+enableGitInfo = true
+
+# The guide has no tags or categories: don't generate empty /tags/ and /categories/ pages
+disableKinds = ['taxonomy', 'term']
+
+[languages.ar]
+  label = 'العربية'
+  direction = 'rtl'
+  weight = 1
+
+[frontmatter]
+  # Prefer the lastmod written in the page, then the last git commit
+  lastmod = ['lastmod', ':git', 'date']
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-BookSection = 'docs'
+
 [permalinks]
-docs = "/:contentbasename/"
+  docs = "/:contentbasename/"
+
 [params]
+  description = 'دليل أسلوب كتابة المحتوى للمواقع الإلكترونية وتطبيقات الموبايل ولوحات التحكم'
+  images = ['banner.jpg']
+
   BookSection = 'docs'
   BookTheme = 'light'
   BookEnableJS = true
+  BookComments = false
+
+  BookRepo = 'https://github.com/UX-Writing/Content-Style-Guide-in-Arabic'
+  # "Edit this page" link in each page footer
+  BookEditLink = '{{ .Site.Params.BookRepo }}/edit/main{{ .Path }}'
+  # Last change date in each page footer, linked to the commit
+  BookLastChangeLink = '{{ .Site.Params.BookRepo }}/commit/{{ .GitInfo.Hash }}'
+  BookDateFormat = '2 January 2006'
