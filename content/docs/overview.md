@@ -54,7 +54,32 @@ weight = 10
 
 ### تحميل الدليل
 
-قريبًا سيتم توفير ميزة (تحميل الدليل) مجانًا بامتدادات مختلفة، لمعرفة توافر هذه الميزة اشترك في قائمتنا البريدية [للاشتراك في القائمة البريدية](https://gohodhod.com/@UXWriting).
+يمكنك تحميل الدليل كاملًا مجانًا في ملف نصي واحد بصيغة Markdown: [llms-full.txt](/llms-full.txt). كما تتوفر كل صفحة بصيغة Markdown بإضافة `index.md` إلى رابطها، مثل [actionable-language/index.md](/actionable-language/index.md).
+
+ولتصلك أخبار التحديثات الجديدة، [اشترك في النشرة البريدية](https://uxwritingar.com/newsletter/).
+
+## استخدام الدليل مع الوكلاء الرقميين
+
+صُمّم الدليل ليعتمد عليه الوكلاء الرقميون (AI Agents) وأدوات الذكاء الاصطناعي عند كتابة نصوص الواجهات بالعربية، فيكتبون أزرارًا ورسائل خطأ وحالات فارغة تتبع قواعده وقائمة كلماته.
+
+| الملف | متى تستخدمه |
+| --- | --- |
+| [llms.txt](/llms.txt) | فهرس الدليل حسب معيار [llms.txt](https://llmstxt.org)، تقرؤه أدوات الذكاء الاصطناعي لتعرف محتوى الموقع |
+| [llms-full.txt](/llms-full.txt) | الدليل كاملًا في ملف واحد، لإضافته إلى سياق أي نموذج |
+| [SKILL.md](/skills/arabic-ux-writing/SKILL.md) | مهارة (Agent Skill) تلخّص قواعد الدليل مع قائمة فحص قبل التسليم |
+
+طرق الاستخدام:
+
+- **Claude Code:** انسخ مجلد [`skills/arabic-ux-writing`](https://github.com/UX-Writing/Content-Style-Guide-in-Arabic/tree/main/skills/arabic-ux-writing) إلى `.claude/skills/` في مشروعك.
+- **Claude.ai:** اضغط المجلد نفسه بصيغة zip وارفعه من الإعدادات في قسم Skills.
+- **Cursor وCopilot وChatGPT وغيرها:** أضف رابط `https://csg.uxwritingar.com/llms-full.txt` أو محتوى `SKILL.md` إلى تعليمات المشروع.
+
+مثال لطلب تكتبه للوكيل:
+
+```text
+اكتب نصوص شاشة تسجيل الدخول بالعربية، وطبّق قواعد دليل أسلوب كتابة المحتوى:
+https://csg.uxwritingar.com/llms-full.txt
+```
 
 ## هل يمكن نسخ/لصق محتوى الدليل بالكامل؟
 
