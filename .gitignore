@@ -79,3 +79,7 @@ yarn-error.log
 
 # NPM lock files
 package-lock.json
+# Hugo
+hugo-site/public/
+hugo-site/resources/_gen/
+hugo-site/.hugo_build.lock
