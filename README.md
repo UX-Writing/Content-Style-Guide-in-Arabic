@@ -63,7 +63,7 @@ weight = 80
 
 ## النشر
 
-كل دمج في الفرع `main` يُنشر تلقائيًا على [csg.uxwritingar.com](https://csg.uxwritingar.com) خلال دقيقة أو دقيقتين. التفاصيل وخطوات الإعداد في [DEPLOY.md](DEPLOY.md).
+كل دمج في الفرع `main` يُنشر تلقائيًا على [csg.uxwritingar.com](https://csg.uxwritingar.com) خلال 5 إلى 7 دقائق. التفاصيل وخطوات الإعداد في [DEPLOY.md](DEPLOY.md).
 
 لبناء نسخة محلية من الموقع في مجلد `public/`:
 
