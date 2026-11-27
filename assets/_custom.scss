@@ -1,0 +1,419 @@
+
+/* استيراد نفس الخط المستخدم في المشروع القديم */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* متغيّرات للألوان كما في theme.js */
+:root {
+  --csg-color-primary: #3182ce;
+  --csg-color-bg: #ffffff;
+  --csg-color-shape: #f2f2fa;
+  --csg-color-title: #3d3d4d;
+  --csg-color-text: #262626;
+
+  --csg-color-blockquote-bg: #feebc8;
+  --csg-color-blockquote-text: #2d3748;
+
+  --csg-color-usage-bg: #f7fafc;
+  --csg-color-usage-yes: #68d391;
+  --csg-color-usage-no: #fc8181;
+}
+
+/* reset بسيط */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* إعدادات الصفحة العامة */
+html,
+body {
+  direction: rtl;
+  text-align: right;
+  font-size: 16px;
+  font-family: 'IBM Plex Sans Arabic', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f9f9f9;
+  color: var(--csg-color-text);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* عناوين */
+h1 {
+  font-size: 32px;
+  color: var(--csg-color-title);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--csg-color-title);
+  margin: 24px 0 16px 0;
+  font-weight: 700;
+}
+
+/* فقرات */
+p {
+  color: var(--csg-color-text);
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+/* كود داخل السطر */
+code.inline-code {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  padding: 0.2em;
+  background-color: #44475a;
+  color: #f8f8f2;
+  font-size: 14px;
+  border-radius: 3px;
+  font-feature-settings: 'clig' 0, 'calt' 0;
+  font-variant: no-common-ligatures no-discretionary-ligatures no-historical-ligatures
+    no-contextual;
+}
+
+h1 code.inline-code,
+h2 code.inline-code {
+  font-size: calc(100% - 5px);
+  padding: 4px;
+}
+
+/* روابط */
+a {
+  --text-opacity: 1;
+  color: rgba(49, 130, 206, var(--text-opacity)); /* #3182ce */
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* اقتباسات */
+blockquote {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+blockquote p {
+  padding: 1rem;
+  border-radius: 5px;
+  background: var(--csg-color-blockquote-bg);
+  color: var(--csg-color-blockquote-text);
+  margin: 0;
+}
+
+blockquote p a {
+  color: var(--csg-color-blockquote-text);
+}
+
+/* فاصل أفقي */
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* جداول */
+table {
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  margin-top: -4px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+table th,
+table td {
+  margin: 0;
+  color: var(--csg-color-text);
+  background-color: var(--csg-color-shape);
+  border: solid 1px var(--csg-color-shape);
+  border-style: solid none;
+  padding: 12px;
+}
+
+table th:first-of-type,
+table td:first-of-type {
+  border-right-style: solid; /* RTL */
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+table th:last-child,
+table td:last-child {
+  border-left-style: solid; /* RTL */
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+table tr th {
+  color: var(--csg-color-title);
+  text-align: right;
+  font-weight: 700;
+}
+
+/* صور و iframe */
+iframe {
+  margin-bottom: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* قوائم (مع ضبط RTL) */
+ul,
+ol {
+  color: var(--csg-color-text);
+  padding-right: 15px; /* بدلاً من left للـ RTL */
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+
+ul li,
+ol li {
+  line-height: 28px;
+}
+
+li ul,
+li ol {
+  margin-bottom: 0;
+}
+
+/* كود متعدد الأسطر / highlight (لو استعملت نفس الكلاسات القديمة) */
+.gatsby-highlight {
+  font-family: Hack, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  font-variant: no-common-ligatures no-discretionary-ligatures no-historical-ligatures
+    no-contextual;
+  position: relative;
+  z-index: 0;
+  margin: 0 0 16px 0;
+  overflow: auto;
+}
+
+.gatsby-highlight .token {
+  font-style: normal !important;
+}
+
+/* لاحظ: Hugo/Prism قد يغيّر هذه الكلاسات، عدّلها حسب توليدك للكود */
+pre[class*='language-'] code {
+  font-family: inherit;
+}
+
+pre[class*='language-']::before {
+  background: #d9d7e0;
+  border-radius: 0 0 4px 4px;
+  color: #232129;
+  font-size: 12px;
+  font-family: inherit;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  right: 1rem; /* RTL */
+  text-align: left;
+  text-transform: uppercase;
+  top: 0;
+}
+
+/* عناوين لغات الكود – كما في المشروع القديم تقريبًا */
+pre[class~='language-js']::before,
+pre[class~='language-javascript']::before {
+  content: 'js';
+  background: #f7df1e;
+}
+
+pre[class~='language-jsx']::before {
+  content: 'jsx';
+  background: #61dafb;
+}
+
+pre[class~='language-typescript']::before,
+pre[class~='language-ts']::before {
+  content: 'ts';
+  background: #294e80;
+  color: #fff;
+}
+
+pre[class~='language-tsx']::before {
+  content: 'tsx';
+  background: #294e80;
+  color: #fff;
+}
+
+pre[class~='language-graphql']::before {
+  content: 'GraphQL';
+  background: #e10098;
+  color: #fff;
+}
+
+pre[class~='language-html']::before {
+  content: 'html';
+  background: #005a9c;
+  color: #fff;
+}
+
+pre[class~='language-css']::before {
+  content: 'css';
+  background: #ff9800;
+  color: #fff;
+}
+
+pre[class~='language-mdx']::before {
+  content: 'mdx';
+  background: #f9ac00;
+  color: #fff;
+}
+
+pre[class~='language-shell']::before {
+  content: 'shell';
+}
+
+pre[class~='language-sh']::before {
+  content: 'sh';
+}
+
+pre[class~='language-bash']::before {
+  content: 'bash';
+}
+
+pre[class~='language-yaml']::before,
+pre[class~='language-yml']::before {
+  content: 'yaml';
+  background: #ffa8df;
+}
+
+pre[class~='language-markdown']::before {
+  content: 'md';
+}
+
+pre[class~='language-json']::before,
+pre[class~='language-json5']::before {
+  content: 'json';
+  background: linen;
+}
+
+pre[class~='language-diff']::before {
+  content: 'diff';
+  background: #e6ffed;
+}
+
+pre[class~='language-text']::before {
+  content: 'text';
+  background: #fff;
+}
+
+pre[class~='language-flow']::before {
+  content: 'flow';
+  background: #e8bd36;
+}
+
+/* ===================================================== */
+/* أنماط كروت الاستخدام (Usage) – نعم / لا                 */
+/* ملاحظة: هذه الكتلة موحّدة، حُذفت النسخ المكررة السابقة   */
+/* ===================================================== */
+
+.usage-container {
+  display: flex;
+  flex-direction: column; /* عمودي على الموبايل */
+  margin-bottom: 1rem;
+}
+
+.usage {
+  padding: 1rem 1.5rem 1.5rem;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  background-color: var(--csg-color-usage-bg);
+  flex: 1;
+}
+
+.usage h3 {
+  font-size: 1rem;
+  margin-top: 0;
+  --text-opacity: 1;
+  color: rgba(113, 128, 150, var(--text-opacity));
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.usage li {
+  color: #2d3748;
+  font-size: large !important;
+}
+
+.usage-yes {
+  border-top: 2px solid var(--csg-color-usage-yes);
+  margin-left: 0;
+  margin-bottom: 1em;
+}
+
+.usage-no {
+  border-top: 2px solid var(--csg-color-usage-no);
+}
+
+/* جعل الكتلتين بجانب بعض على الشاشات المتوسطة فما فوق */
+@media screen and (min-width: 768px) {
+  .usage-container {
+    flex-direction: row;
+  }
+
+  .usage-yes {
+    margin-bottom: 0;
+  }
+
+  .usage-no {
+    margin-right: 1em; /* مسافة بين الكتلتين في RTL */
+  }
+}
+
+/* ===================================================== */
+/* إصلاح قائمة الدليل (sidebar) في الموبايل مع RTL          */
+/* ملاحظة: هذه الكتلة الوحيدة المطلوبة، حُذفت كل التكرارات   */
+/* والكتلة اليتيمة التي كانت تسبب خطأ البناء (قوس بلا فتح)   */
+/* ===================================================== */
+
+@media screen and (max-width: 56rem) {
+  /* لا نستخدم الهامش السالب، نثبت القائمة على يمين الشاشة */
+  .book-menu {
+    margin-inline-start: 0 !important;
+    z-index: 1000;
+  }
+
+  .book-menu .book-menu-content {
+    right: 0;
+    left: auto;
+    transform: translateX(0) !important; /* ثابتة على اليمين */
+  }
+
+  /* عند الضغط على زر القائمة تظهر الـ sidebar */
+  #menu-control:checked ~ main .book-menu {
+    visibility: visible !important;
+  }
+}

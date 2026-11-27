@@ -1,0 +1,17 @@
+baseURL = 'https://csg.uxwritingar.com/'
+title   = 'دليل أسلوب كتابة المحتوى | Content Style Guide'
+locale  = 'ar'
+defaultContentLanguage = 'ar'
+publishDir = "/home/uxwriting/domains/csg.uxwritingar.com/public_html/public"
+theme = 'hugo-book'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+BookSection = 'docs'
+[permalinks]
+docs = "/:contentbasename/"
+[params]
+  BookSection = 'docs'
+  BookTheme = 'light'
+  BookEnableJS = true
