@@ -61,6 +61,20 @@ weight = 80
 +++
 ```
 
+## النشر
+
+كل دمج في الفرع `main` يُنشر تلقائيًا على [csg.uxwritingar.com](https://csg.uxwritingar.com) خلال دقيقة أو دقيقتين. التفاصيل وخطوات الإعداد في [DEPLOY.md](DEPLOY.md).
+
+لبناء نسخة محلية من الموقع في مجلد `public/`:
+
+```bash
+hugo --gc --minify
+```
+
+## المساهمة
+
+اقرأ [دليل المساهمة](.github/CONTRIBUTING.md).
+
 ## الترخيص
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)

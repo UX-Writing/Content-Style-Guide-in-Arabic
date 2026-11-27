@@ -2,7 +2,6 @@ baseURL = 'https://csg.uxwritingar.com/'
 title   = 'دليل أسلوب كتابة المحتوى | Content Style Guide'
 locale  = 'ar'
 defaultContentLanguage = 'ar'
-publishDir = "/home/uxwriting/domains/csg.uxwritingar.com/public_html/public"
 theme = 'hugo-book'
 
 # Generate robots.txt (template in layouts/robots.txt)
