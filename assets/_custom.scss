@@ -393,27 +393,10 @@ pre[class~='language-flow']::before {
   }
 }
 
-/* ===================================================== */
-/* إصلاح قائمة الدليل (sidebar) في الموبايل مع RTL          */
-/* ملاحظة: هذه الكتلة الوحيدة المطلوبة، حُذفت كل التكرارات   */
-/* والكتلة اليتيمة التي كانت تسبب خطأ البناء (قوس بلا فتح)   */
-/* ===================================================== */
+/* القائمة الجانبية على الجوال: يتكفّل بها القالب نفسه بعد ضبط dir="rtl" في hugo.toml */
 
-@media screen and (max-width: 56rem) {
-  /* لا نستخدم الهامش السالب، نثبت القائمة على يمين الشاشة */
-  .book-menu {
-    margin-inline-start: 0 !important;
-    z-index: 1000;
-  }
-
-  .book-menu .book-menu-content {
-    right: 0;
-    left: auto;
-    transform: translateX(0) !important; /* ثابتة على اليمين */
-  }
-
-  /* عند الضغط على زر القائمة تظهر الـ sidebar */
-  #menu-control:checked ~ main .book-menu {
-    visibility: visible !important;
-  }
+/* أسهم "السابق/التالي" تشير إلى الاتجاه الصحيح في RTL */
+[dir='rtl'] img.book-icon[src$='backward.svg'],
+[dir='rtl'] img.book-icon[src$='forward.svg'] {
+  transform: scaleX(-1);
 }

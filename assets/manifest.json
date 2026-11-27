@@ -1,0 +1,19 @@
+{
+  "name": "{{ .Site.Title }}",
+  "short_name": "دليل أسلوب المحتوى",
+  "description": "{{ .Site.Params.description }}",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "{{ "./" | relURL }}",
+  "scope": "{{ "./" | relURL }}",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3182ce",
+  "icons": [
+    {
+      "src": "{{ "favicon.png" | relURL }}",
+      "sizes": "300x300",
+      "type": "image/png"
+    }
+  ]
+}
