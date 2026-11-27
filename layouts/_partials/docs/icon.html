@@ -1,0 +1,8 @@
+{{- /*
+  Override of the theme's icon partial: publish icons under /book-icons/ instead of /icons/.
+  Apache's default `Alias /icons/ /usr/share/apache2/icons/` (mod_alias) shadows /icons/ on the
+  server, so the theme's icons returned 404 there.
+*/ -}}
+{{- $icon := resources.GetMatch (printf "icons/%s.*" .) -}}
+{{- $icon = $icon | resources.Copy (printf "book-icons/%s" (path.Base $icon.Name)) -}}
+{{- return $icon.RelPermalink -}}
