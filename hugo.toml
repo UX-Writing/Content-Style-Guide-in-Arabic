@@ -73,7 +73,7 @@ disableKinds = ['taxonomy', 'term']
   images = ['banner.jpg']
 
   BookSection = 'docs'
-  BookTheme = 'light'
+  BookTheme = 'csg'  # theme-csg in assets/_custom.scss, colors from uxwritingar.com
   BookEnableJS = true
   BookComments = false
 

@@ -7,8 +7,8 @@
   "start_url": "{{ "./" | relURL }}",
   "scope": "{{ "./" | relURL }}",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#3182ce",
+  "background_color": "#faf9f6",
+  "theme_color": "#6312ff",
   "icons": [
     {
       "src": "{{ "favicon.png" | relURL }}",
