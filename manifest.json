@@ -1,0 +1,19 @@
+{
+  "name": "دليل أسلوب كتابة المحتوى | Content Style Guide",
+  "short_name": "دليل أسلوب المحتوى",
+  "description": "دليل أسلوب كتابة المحتوى للمواقع الإلكترونية وتطبيقات الموبايل ولوحات التحكم",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#6312ff",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "300x300",
+      "type": "image/png"
+    }
+  ]
+}
