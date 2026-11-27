@@ -1,0 +1,6 @@
+{{- /* The guide pages in sidebar order: the home page, then docs by weight */ -}}
+{{- $pages := slice site.Home -}}
+{{- range (where site.RegularPages "Section" "docs").ByWeight -}}
+  {{- $pages = $pages | append . -}}
+{{- end -}}
+{{- return $pages -}}

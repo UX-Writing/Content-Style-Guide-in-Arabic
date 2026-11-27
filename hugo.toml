@@ -18,6 +18,44 @@ disableKinds = ['taxonomy', 'term']
   direction = 'rtl'
   weight = 1
 
+# Plain-text copies of the guide for AI agents and LLM tools:
+#   /llms.txt       index of the guide (https://llmstxt.org)
+#   /llms-full.txt  the whole guide in one file
+#   /<page>/index.md  each page as Markdown
+[mediaTypes]
+  [mediaTypes.'text/markdown']
+    suffixes = ['md']
+
+[outputFormats]
+  [outputFormats.markdown]
+    mediaType = 'text/markdown'
+    baseName = 'index'
+    isPlainText = true
+    rel = 'alternate'
+  [outputFormats.llms]
+    mediaType = 'text/plain'
+    baseName = 'llms'
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.llmsfull]
+    mediaType = 'text/plain'
+    baseName = 'llms-full'
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ['html', 'rss', 'markdown', 'llms', 'llmsfull']
+  page = ['html', 'markdown']
+
+# Publish the agent skill in skills/ at /skills/ on the site
+[module]
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'skills'
+    target = 'static/skills'
+
 [frontmatter]
   # Prefer the lastmod written in the page, then the last git commit
   lastmod = ['lastmod', ':git', 'date']
