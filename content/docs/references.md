@@ -4,6 +4,7 @@ translators = "فريق UX Writing بالعربية"
 date = 2020-02-17
 lastmod = 2022-04-23
 title = "المراجع والمصادر"
+description = "المصادر والمراجع التي يستند إليها دليل أسلوب كتابة المحتوى بالعربية، ومنها أدلة Mailchimp وShopify Polaris وWire."
 slug = "references"
 weight = 70
 +++
