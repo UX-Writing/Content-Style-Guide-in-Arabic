@@ -1,6 +1,6 @@
 # دليل أسلوب كتابة المحتوى بالعربية
 
-دليل مفتوح المصدر لكتابة تجربة المستخدم (UX Writing) وتصميم المحتوى (Content Design) باللغة العربية، مبني على ترجمة [Product Language Framework](https://github.com/quinnkeast/product-language-framework).
+دليل مفتوح المصدر لكتابة تجربة المستخدم (UX Writing) وتصميم المحتوى (Content Design) باللغة العربية، مبني على مشروع [Product Language Framework](https://github.com/quinnkeast/product-language-framework).
 
 الموقع المنشور: [csg.uxwritingar.com](https://csg.uxwritingar.com)
 
