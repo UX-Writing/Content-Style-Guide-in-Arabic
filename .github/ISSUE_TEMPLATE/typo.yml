@@ -1,0 +1,24 @@
+name: ✏️ خطأ لغوي أو إملائي
+description: أبلغ عن خطأ إملائي أو نحوي أو في علامات الترقيم.
+title: "[تصحيح]: "
+labels: ["documentation"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: رابط الصفحة
+      placeholder: "https://csg.uxwritingar.com/voice-and-tone/"
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: النص الذي فيه الخطأ
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: التصحيح المقترح
+    validations:
+      required: true

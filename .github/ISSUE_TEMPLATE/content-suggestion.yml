@@ -1,0 +1,61 @@
+name: 💡 اقتراح محتوى
+description: اقترح إضافة قسم أو مثال جديد، أو تعديل إرشاد موجود في الدليل.
+title: "[اقتراح]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: شكرًا لمساهمتك. كلما كان اقتراحك أوضح، كان أسهل علينا مراجعته وإضافته.
+  - type: dropdown
+    id: page
+    attributes:
+      label: الصفحة
+      description: في أي صفحة يجب أن يظهر هذا المحتوى؟
+      options:
+        - المقدمة (الصفحة الرئيسية)
+        - نظرة عامة
+        - الصوت والنبرة
+        - طُرق الكتابة الفعّالة
+        - الأسلوب وآلية الكتابة
+        - إمكانية الوصول
+        - قوائم الكلمات
+        - المراجع والمصادر
+        - صفحة جديدة
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: نوع الاقتراح
+      options:
+        - إضافة قسم أو إرشاد جديد
+        - إضافة مثال صواب/خطأ
+        - تعديل إرشاد موجود
+        - حذف محتوى
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: النص الحالي
+      description: إن كان الاقتراح تعديلًا، انسخ النص الحالي هنا.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: النص المقترح
+      description: اكتب المحتوى كما تقترح أن يظهر في الدليل.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: سبب الاقتراح
+      description: لماذا يحسّن هذا الدليل؟ هل يوجد مرجع أو تجربة عملية تدعمه؟
+    validations:
+      required: true
+  - type: checkboxes
+    id: pr
+    attributes:
+      label: المساهمة
+      options:
+        - label: أرغب في فتح طلب دمج (Pull Request) بالتعديل بنفسي.

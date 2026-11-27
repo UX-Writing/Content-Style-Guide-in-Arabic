@@ -1,0 +1,28 @@
+name: 🐞 مشكلة في الموقع
+description: أبلغ عن مشكلة في عرض الموقع أو عمله، مثل البحث أو القائمة أو التنسيق.
+title: "[مشكلة]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: رابط الصفحة
+      placeholder: "https://csg.uxwritingar.com/"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: ماذا حدث؟
+      description: صف المشكلة، وأرفق لقطة شاشة إن أمكن.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: ماذا توقعت أن يحدث؟
+  - type: input
+    id: device
+    attributes:
+      label: الجهاز والمتصفح
+      placeholder: "مثال: iPhone 15، Safari"
