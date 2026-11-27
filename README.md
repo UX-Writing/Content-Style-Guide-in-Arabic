@@ -61,6 +61,25 @@ weight = 80
 +++
 ```
 
+## استخدام الدليل مع الوكلاء الرقميين (AI Agents)
+
+يمكن للوكلاء الرقميين وأدوات الذكاء الاصطناعي الاعتماد على الدليل عند كتابة نصوص الواجهات بالعربية:
+
+| الملف | الاستخدام |
+| --- | --- |
+| [llms.txt](https://csg.uxwritingar.com/llms.txt) | فهرس الدليل للوكلاء حسب معيار [llms.txt](https://llmstxt.org) |
+| [llms-full.txt](https://csg.uxwritingar.com/llms-full.txt) | الدليل كاملًا في ملف واحد، لإضافته إلى سياق أي نموذج |
+| `/<الصفحة>/index.md` | كل صفحة بصيغة Markdown، مثل [actionable-language/index.md](https://csg.uxwritingar.com/actionable-language/index.md) |
+| [skills/arabic-ux-writing/SKILL.md](skills/arabic-ux-writing/SKILL.md) | مهارة (Agent Skill) تلخّص قواعد الدليل مع قائمة فحص |
+
+طرق الاستخدام:
+
+- **Claude Code:** انسخ مجلد `skills/arabic-ux-writing` إلى `.claude/skills/` في مشروعك.
+- **Claude.ai:** اضغط مجلد `arabic-ux-writing` بصيغة zip وارفعه من الإعدادات في قسم Skills.
+- **أي وكيل أو محرر آخر (Cursor، Copilot، ChatGPT):** أضف رابط `llms-full.txt` أو محتوى `SKILL.md` إلى تعليمات المشروع.
+
+تُبنى ملفات `llms.txt` ونسخ Markdown تلقائيًا من صفحات الدليل مع كل نشر. أما `SKILL.md` فملخّص مكتوب يدويًا، لذلك حدّثه عند إضافة قاعدة جديدة إلى الدليل.
+
 ## النشر
 
 كل دمج في الفرع `main` يُنشر تلقائيًا على [csg.uxwritingar.com](https://csg.uxwritingar.com) خلال 5 إلى 7 دقائق. التفاصيل وخطوات الإعداد في [DEPLOY.md](DEPLOY.md).

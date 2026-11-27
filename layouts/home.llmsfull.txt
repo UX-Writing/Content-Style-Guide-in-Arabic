@@ -1,0 +1,8 @@
+# {{ site.Title }}
+
+> {{ .Description }}
+
+{{ range partial "llms/pages.html" . }}
+{{ partial "llms/page.md" . }}
+
+{{ end -}}
