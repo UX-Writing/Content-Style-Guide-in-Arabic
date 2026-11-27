@@ -1,153 +1,111 @@
-# Contribution guidelines
+# دليل المساهمة
 
-## Table of Contents
+شكرًا لاهتمامك بتطوير دليل أسلوب كتابة المحتوى بالعربية. هذا الدليل مفتوح المصدر، وكل مساهمة فيه، مهما كانت صغيرة، تساعد كتّاب تجربة المستخدم ومصممي المحتوى العرب.
 
-- [Getting started](#getting-started)
-  - [Language](#language)
-    - [For native English speakers](#for-native-english-speakers)
-  - [Code of Conduct](#code-of-conduct)
-- [How can I help?](#how-can-i-help)
-  - [Documentation](#documentation)
-  - [Issues](#issues)
-    - [Submitting an issue](#submitting-an-issue)
-  - [Feedback](#feedback)
-  - [Code](#code)
-    - [Prerequisites](#prerequisites)
-    - [Local Development](#local-development)
-- [Commiting](#commiting)
-  - [Why all these rules?](#why-all-these-rules)
-- [Pull Requests](#pull-requests)
-  - [Changesets](#changesets)
+## طرق المساهمة
 
-## Getting started
+| ما تريد فعله | الطريقة |
+| --- | --- |
+| الإبلاغ عن خطأ لغوي أو إملائي | [افتح مشكلة: خطأ لغوي](https://github.com/UX-Writing/Content-Style-Guide-in-Arabic/issues/new?template=typo.yml) |
+| اقتراح إضافة أو تعديل في محتوى الدليل | [افتح مشكلة: اقتراح محتوى](https://github.com/UX-Writing/Content-Style-Guide-in-Arabic/issues/new?template=content-suggestion.yml) |
+| اقتراح مصطلح لقائمة الكلمات | [افتح مشكلة: اقتراح مصطلح](https://github.com/UX-Writing/Content-Style-Guide-in-Arabic/issues/new?template=word-list.yml) |
+| الإبلاغ عن مشكلة في الموقع نفسه | [افتح مشكلة: مشكلة في الموقع](https://github.com/UX-Writing/Content-Style-Guide-in-Arabic/issues/new?template=site-bug.yml) |
+| تعديل المحتوى بنفسك | اتبع الخطوات في القسم التالي |
 
-First off, we would like to thank you for taking the time to contribute and make this a better project!
+إذا لم تكن متأكدًا من الطريقة المناسبة، فافتح مشكلة (Issue) أولًا وسنناقشها معك.
 
-Here we have a set of instructions and guidelines to reduce misunderstandings and make the process of contributing to Rocket Docs as smooth as possible.
+## تعديل المحتوى مباشرة من GitHub (دون أي برامج)
 
-We hope this guide makes the contribution process clear and answers any questions you may have.
+هذه الطريقة هي الأسهل، ولا تحتاج إلى تثبيت أي شيء على جهازك.
 
-### Language
+١. افتح مجلد [`content/docs/`](../content/docs/) واختر ملف الصفحة التي تريد تعديلها.
+٢. اضغط على أيقونة القلم ✏️ (Edit this file) أعلى الملف. سيطلب منك GitHub إنشاء نسخة (Fork) من المستودع إن لم تكن عضوًا في الفريق.
+٣. عدّل النص، ثم اضغط **Commit changes** واكتب وصفًا قصيرًا للتعديل.
+٤. اضغط **Propose changes** ثم **Create pull request**.
+٥. سيتحقق GitHub تلقائيًا من أن الموقع يُبنى بنجاح مع تعديلك، ثم يراجعه أحد أعضاء الفريق ويدمجه أو يعلّق عليه.
 
-Please, while contributing or interacting in any way in this project, refrain from using any language other than **English**.
+## تعديل المحتوى على جهازك
 
-#### For native English speakers
+إذا كنت تريد معاينة تعديلاتك قبل إرسالها، فاتبع خطوات التشغيل في [README](../README.md)، ثم:
 
-Try to use simple words and sentences. Don't make fun of non-native English speakers if you find something wrong about the way they express themselves.
-
-Try to encourage newcomers to express their opinions, and make them comfortable enough to do so.
-
-### Code of Conduct
-
-We expect that project participants to adhere to our Code of Conduct. You can check the [full text](CODE_OF_CONDUCT.md) so that you may understand the kind of conduct we are expecting and what actions will and will not be tolerated.
-
-By participating in this project, you agree to abide by its terms.
-
-## How can I help?
-
-Here are some ways you can help along with some guidelines.
-
-### Documentation
-
-As a user of our themes, you're the perfect candidate to help us improve our documentation!
-
-Typos, errors, lack of examples and/or explanation and so on, are just some examples of things that could be fixed and/or improved.
-
-You could even make improvements to this guide! :)
-
-While documenting, try to keep things simple and clear.
-
-### Issues
-
-Some issues are created with missing information, without a template, not reproducible, or plain
-invalid.
-
-You can make them easier to understand and resolve.
-
-#### Submitting an issue
-
-- Please search for similar issues before opening a new one;
-- Use one of the corresponding issue templates;
-- Use a clear and descriptive title;
-- Include as much information as possible by filling out the provided issue template;
-
-### Feedback
-
-The more feedback the better! We're always looking for more suggestions and opinions on discussions. That's a good opportunity to influence the future direction of this project.
-
-This includes submitting an enhancement suggestion, including completely new features and minor improvements to existing functionality.
-
-### Code
-
-You can use issue labels to discover issues you could help out with:
-
-- [`bug` issues](https://github.com/jpedroschmitz/rocketdocs/labels/kind%3A%20bug)
-  are known bugs we'd like to fix;
-- [`enhancement` issues](https://github.com/jpedroschmitz/rocketdocs/labels/type%3A%20feature%20request)
-  are features we're open to include.
-
-The
-[`help wanted`](https://github.com/jpedroschmitz/rocketdocs/labels/help%20wanted)
-and
-[`good first issue`](https://github.com/jpedroschmitz/rocketdocs/labels/good%20first%20issue)
-labels are especially useful.
-
-When you see an issue that is already assigned, please check to see if there isn't someone working on it already (maybe try asking in the issue). This is to prevent unnecessary work for everyone involved.
-
-#### Prerequisites
-
-- [Node.js](http://nodejs.org/) >= v12 must be installed.
-- [Yarn](https://yarnpkg.com/en/docs/install)
-
-#### Local Development
-
-This repository uses [Yarn Workspaces][] and [changesets][] to develop multiple packages together as a monorepo. Be sure to install [Yarn][] before setting up the development environment.
-
-To get started, clone the repository:
-
-```sh
-git clone git@github.com:LekoArts/gatsby-themes.git --depth=1
+```bash
+git checkout -b my-change
+# عدّل الملفات وعاين النتيجة بالأمر: hugo server
+git add content/
+git commit -m "docs(word-list): إضافة مصطلح تسجيل الدخول"
+git push origin my-change
 ```
 
-Install the dependencies:
+ثم افتح طلب دمج (Pull Request) من صفحة المستودع.
 
-```sh
-yarn
+## قواعد كتابة المحتوى
+
+### إضافة صفحة جديدة
+
+أنشئ ملفًا في `content/docs/` باسم إنجليزي قصير بأحرف صغيرة وشرطات، مثل `forms.md`، وابدأه بهذه الترويسة:
+
+```toml
++++
+title = "النماذج"
+date = 2026-11-28
+lastmod = 2026-11-28
+weight = 80
++++
 ```
 
-After yarn has linked packages and installed the dependencies in the repo, you can inspect the locally available workspaces with:
+- `title`: عنوان الصفحة كما يظهر في القائمة الجانبية.
+- `weight`: ترتيب الصفحة في القائمة. الصفحات الحالية مرقّمة من 10 إلى 70، فاختر رقمًا يضعها في المكان المناسب.
+- `lastmod`: حدّثه كلما عدّلت الصفحة.
 
-```sh
-yarn workspaces info
+ابدأ محتوى الصفحة بعنوان من المستوى الأول (`#`) مع رمز تعبيري، كما في الصفحات الحالية.
+
+### أمثلة صواب وخطأ
+
+استخدم هذا القالب كما هو لعرض المقارنة بين الاستخدام الصحيح والخاطئ. انتبه إلى أن الخاصية اسمها `class` وليس `className`:
+
+```html
+<div class="usage-container">
+  <div class="usage usage-yes">
+    <h3>صواب</h3>
+    <ul>
+      <li>المثال الصحيح</li>
+    </ul>
+  </div>
+  <div class="usage usage-no">
+    <h3>خطأ</h3>
+    <ul>
+      <li>المثال الخاطئ</li>
+    </ul>
+  </div>
+</div>
 ```
 
-As all themes are set up with a respective example page (to view the theme/changes), you could for example run the "@rocketseat/gatsby-theme-docs" workspace with the example "rocketdocs" like:
+### قائمة الكلمات
 
-```sh
-yarn workspace gatsby-starter-rocketdocs start
+اكتب المصطلح غير المفضل مشطوبًا ثم السهم ثم المصطلح المفضل بخط عريض:
+
+```markdown
+- ~~تشغيل~~ → **تسلسل**
 ```
 
-## Commiting
+### الأسلوب
 
-When commiting on the repository, make sure to use the [Commitizen CLI](https://www.npmjs.com/package/commitizen) by using the `yarn commit` command. It will format your commit message following the configuration we have defined.
+طبّق إرشادات الدليل نفسه على ما تكتبه، وخاصة صفحتي [الصوت والنبرة](https://csg.uxwritingar.com/voice-and-tone/) و[الأسلوب وآلية الكتابة](https://csg.uxwritingar.com/style-and-mechanics/).
 
-### Why all these rules?
+## رسائل الـ Commit
 
-We try to enforce these rules for the following reasons:
+نفضّل أن تبدأ الرسالة بنوع التعديل واسم الصفحة، ثم وصف قصير بالعربية أو الإنجليزية:
 
-- Automatically generating changelog;
-- Communicating in a better way the nature of changes;
-- Triggering build and publish processes;
-- Automatically determining a semantic version bump (based on the types of commits);
-- Making it easier for people to contribute, by allowing them to explore a more structured commit history.
+- `docs(voice-and-tone): تصحيح مثال النبرة السلبية`
+- `docs(word-list): إضافة مصطلح جديد`
+- `fix(site): إصلاح اتجاه القائمة على الجوال`
 
-## Pull Requests
+## مراجعة طلبات الدمج
 
-When opening a pull request, please be sure to update any relevant documentation in the READMEs or write some additional tests to ensure functionality. Also include a high-level list of changes.
+- يتحقق GitHub Actions من أن الموقع يُبنى بنجاح في كل طلب دمج.
+- يراجع أحد المشرفين التعديل لغويًا ومن حيث اتساقه مع الدليل.
+- بعد الدمج في `main` يُنشر التحديث على [csg.uxwritingar.com](https://csg.uxwritingar.com).
 
-### Changesets
+## قواعد السلوك
 
-This repository uses [changesets][] to do versioning. What that means for contributors is that you need to add a changeset by running `yarn changeset` which contains what packages should be bumped, their associated semver bump types, and some markdown which will be inserted into changelogs.
-
-[yarn workspaces]: https://yarnpkg.com/en/docs/workspaces
-[changesets]: https://github.com/atlassian/changesets
+بمشاركتك في هذا المشروع فإنك توافق على [قواعد السلوك](CODE_OF_CONDUCT.md).

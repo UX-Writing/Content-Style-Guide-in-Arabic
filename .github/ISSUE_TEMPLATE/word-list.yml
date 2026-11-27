@@ -1,0 +1,29 @@
+name: 🔤 اقتراح مصطلح
+description: اقترح مصطلحًا جديدًا لقائمة الكلمات، أو بديلًا لمصطلح موجود.
+title: "[مصطلح]: "
+labels: ["documentation"]
+body:
+  - type: input
+    id: preferred
+    attributes:
+      label: المصطلح المفضّل
+      placeholder: "مثال: تسجيل الدخول"
+    validations:
+      required: true
+  - type: input
+    id: avoid
+    attributes:
+      label: المصطلحات التي يجب تجنبها
+      placeholder: "مثال: الولوج، الدخول"
+  - type: input
+    id: english
+    attributes:
+      label: المقابل الإنجليزي
+      placeholder: "مثال: Sign in"
+  - type: textarea
+    id: context
+    attributes:
+      label: سياق الاستخدام
+      description: أين يُستخدم هذا المصطلح في الواجهة؟ ولماذا تفضّله على البدائل؟
+    validations:
+      required: true
