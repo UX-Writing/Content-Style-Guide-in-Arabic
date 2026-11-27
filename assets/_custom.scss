@@ -2,20 +2,41 @@
 /* استيراد نفس الخط المستخدم في المشروع القديم */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-/* متغيّرات للألوان كما في theme.js */
+/* ألوان وخطوط الدليل مأخوذة من الموقع الأساسي uxwritingar.com */
 :root {
-  --csg-color-primary: #3182ce;
-  --csg-color-bg: #ffffff;
-  --csg-color-shape: #f2f2fa;
-  --csg-color-title: #3d3d4d;
-  --csg-color-text: #262626;
+  --csg-color-primary: #6312ff;       /* البنفسجي الأساسي: الروابط والأزرار */
+  --csg-color-primary-dark: #3c08ba;  /* عند المرور بالمؤشر والتحديد */
+  --csg-color-primary-tint: #f0e9ff;  /* خلفية بنفسجية فاتحة */
+  --csg-color-accent: #f7b511;        /* الأصفر */
+  --csg-color-bg: #faf9f6;            /* خلفية الصفحة */
+  --csg-color-surface: #ffffff;       /* خلفية البطاقات */
+  --csg-color-shape: #f2f0e9;         /* خلفية العناصر الثانوية */
+  --csg-color-border: #ebebeb;
+  --csg-color-title: #192a3d;
+  --csg-color-text: #192a3d;
+  --csg-color-muted: #707070;
 
-  --csg-color-blockquote-bg: #feebc8;
-  --csg-color-blockquote-text: #2d3748;
+  --csg-color-blockquote-bg: #fef6e0;
+  --csg-color-blockquote-text: #192a3d;
 
-  --csg-color-usage-bg: #f7fafc;
-  --csg-color-usage-yes: #68d391;
-  --csg-color-usage-no: #fc8181;
+  --csg-color-usage-bg: var(--csg-color-surface);
+  --csg-color-usage-yes: #007a47;
+  --csg-color-usage-no: #dd0707;
+
+  --csg-radius: 12px;
+}
+
+/* سمة الدليل: تُفعَّل بـ BookTheme = 'csg' في hugo.toml */
+@mixin theme-csg {
+  @include theme-light;
+  --body-background: var(--csg-color-bg);
+  --body-font-color: var(--csg-color-text);
+  --body-font-weight: 500;
+  --color-link: var(--csg-color-primary);
+  --color-visited-link: var(--csg-color-primary);
+  --gray-100: var(--csg-color-shape);
+  --gray-200: var(--csg-color-border);
+  --gray-500: #dedcd3;
 }
 
 /* reset بسيط */
@@ -35,30 +56,46 @@ body {
   font-size: 16px;
   font-family: 'IBM Plex Sans Arabic', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #f9f9f9;
+  font-weight: 500;
+  line-height: 1.65;
+  background-color: var(--csg-color-bg);
   color: var(--csg-color-text);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-/* عناوين */
+::selection {
+  background: var(--csg-color-primary-dark);
+  color: #ffffff;
+}
+
+/* عناوين: وزن 700 وارتفاع سطر 1.5 كما في الموقع الأساسي */
 h1 {
-  font-size: 32px;
-  color: var(--csg-color-title);
-  font-weight: 700;
+  font-size: 2rem;
   margin-bottom: 24px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.25rem;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 1.125rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--csg-color-title);
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 h2,
@@ -66,18 +103,16 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--csg-color-title);
   margin: 24px 0 16px 0;
-  font-weight: 700;
 }
 
 /* فقرات */
 p {
   color: var(--csg-color-text);
   font-size: 16px;
-  line-height: 28px;
+  line-height: 1.65;
   margin-bottom: 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* كود داخل السطر */
@@ -103,13 +138,13 @@ h2 code.inline-code {
 
 /* روابط */
 a {
-  --text-opacity: 1;
-  color: rgba(49, 130, 206, var(--text-opacity)); /* #3182ce */
-  font-weight: 700;
+  color: var(--csg-color-primary);
+  font-weight: 600;
   text-decoration: none;
 }
 
 a:hover {
+  color: var(--csg-color-primary-dark);
   text-decoration: underline;
 }
 
@@ -121,7 +156,8 @@ blockquote {
 
 blockquote p {
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: var(--csg-radius);
+  border-inline-start: 4px solid var(--csg-color-accent);
   background: var(--csg-color-blockquote-bg);
   color: var(--csg-color-blockquote-text);
   margin: 0;
@@ -135,8 +171,7 @@ blockquote p a {
 hr {
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid var(--csg-color-border);
 }
 
 /* جداول */
@@ -152,8 +187,8 @@ table th,
 table td {
   margin: 0;
   color: var(--csg-color-text);
-  background-color: var(--csg-color-shape);
-  border: solid 1px var(--csg-color-shape);
+  background-color: var(--csg-color-surface);
+  border: solid 1px var(--csg-color-border);
   border-style: solid none;
   padding: 12px;
 }
@@ -161,18 +196,20 @@ table td {
 table th:first-of-type,
 table td:first-of-type {
   border-right-style: solid; /* RTL */
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: var(--csg-radius);
+  border-bottom-right-radius: var(--csg-radius);
 }
 
 table th:last-child,
 table td:last-child {
   border-left-style: solid; /* RTL */
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+  border-bottom-left-radius: var(--csg-radius);
+  border-top-left-radius: var(--csg-radius);
 }
 
 table tr th {
+  background-color: var(--csg-color-primary-tint);
+  border-color: var(--csg-color-primary-tint);
   color: var(--csg-color-title);
   text-align: right;
   font-weight: 700;
@@ -198,7 +235,7 @@ ol {
 
 ul li,
 ol li {
-  line-height: 28px;
+  line-height: 1.65;
 }
 
 li ul,
@@ -348,8 +385,8 @@ pre[class~='language-flow']::before {
 
 .usage {
   padding: 1rem 1.5rem 1.5rem;
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border: 1px solid var(--csg-color-border);
+  border-radius: var(--csg-radius);
   background-color: var(--csg-color-usage-bg);
   flex: 1;
 }
@@ -357,25 +394,32 @@ pre[class~='language-flow']::before {
 .usage h3 {
   font-size: 1rem;
   margin-top: 0;
-  --text-opacity: 1;
-  color: rgba(113, 128, 150, var(--text-opacity));
+  font-weight: 700;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .usage li {
-  color: #2d3748;
+  color: var(--csg-color-text);
   font-size: large !important;
 }
 
+.usage-yes h3 {
+  color: var(--csg-color-usage-yes);
+}
+
+.usage-no h3 {
+  color: var(--csg-color-usage-no);
+}
+
 .usage-yes {
-  border-top: 2px solid var(--csg-color-usage-yes);
+  border-top: 4px solid var(--csg-color-usage-yes);
   margin-left: 0;
   margin-bottom: 1em;
 }
 
 .usage-no {
-  border-top: 2px solid var(--csg-color-usage-no);
+  border-top: 4px solid var(--csg-color-usage-no);
 }
 
 /* جعل الكتلتين بجانب بعض على الشاشات المتوسطة فما فوق */
