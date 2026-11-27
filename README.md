@@ -1,85 +1,70 @@
-# Content Style Guide in Arabic
+# دليل أسلوب كتابة المحتوى بالعربية
 
-This is the Content Style Guide in Arabic. It is based on the translation of the [Product Language Framework](https://github.com/quinnkeast/product-language-framework).
-The project is based on the [Rocket Docs Gatsby theme](https://github.com/jpedroschmitz/rocketdocs).
+دليل مفتوح المصدر لكتابة تجربة المستخدم (UX Writing) وتصميم المحتوى (Content Design) باللغة العربية، مبني على ترجمة [Product Language Framework](https://github.com/quinnkeast/product-language-framework).
 
-## Screenshots
+الموقع المنشور: [csg.uxwritingar.com](https://csg.uxwritingar.com)
 
-![Guide Screenshot](https://github.com/UX-Writing/Content-Style-Guide-in-Arabic/blob/main/examples/gatsby-theme-docs/static/banner.jpg?raw=true)
+## التقنية المستخدمة
 
-## Run Locally
+- [Hugo](https://gohugo.io) (الإصدار الموسّع `extended` رقم `0.164.0` أو أحدث) لتحويل ملفات Markdown إلى موقع ثابت.
+- قالب [Hugo Book](https://github.com/alex-shpak/hugo-book) مضاف كـ Git submodule في `themes/hugo-book`.
+- تخصيصات التصميم (الخط، الألوان، الاتجاه من اليمين لليسار، صناديق صواب/خطأ) في `assets/_custom.scss`.
 
-Clone the project
+## هيكل المشروع
 
-```bash
-  git clone https://github.com/UX-Writing/Content-Style-Guide-in-Arabic
+```text
+content/
+  _index.md              # الصفحة الرئيسية (المقدمة)
+  docs/                  # صفحات الدليل، كل صفحة في ملف Markdown
+assets/_custom.scss      # تنسيقات الموقع
+archetypes/default.md    # قالب الصفحة الجديدة
+themes/hugo-book/        # القالب (submodule)
+hugo.toml                # إعدادات الموقع
 ```
 
-Go to the project directory
+## التشغيل محليًا
+
+١. انسخ المستودع مع القالب:
 
 ```bash
-  cd my-project/path/in/my/machine
+git clone --recurse-submodules https://github.com/UX-Writing/Content-Style-Guide-in-Arabic
+cd Content-Style-Guide-in-Arabic
 ```
 
-go to the right directory in the project
+إذا نسخته مسبقًا دون القالب:
 
 ```bash
-  cd examples/gatsby-theme-docs/
+git submodule update --init
 ```
 
-Install the dependencies
+٢. ثبّت Hugo بإصداره الموسّع (`extended`) من [صفحة التثبيت](https://gohugo.io/installation/).
+
+٣. شغّل الموقع في وضع التطوير:
 
 ```bash
-  npm run install
+hugo server
 ```
 
-or using yarn
+ثم افتح `http://localhost:1313` في المتصفح، وستظهر أي تعديلات تحفظها مباشرة.
 
-```bash
-  yarn
+## إضافة صفحة جديدة أو تعديل صفحة
+
+- لتعديل صفحة: عدّل ملفها في `content/docs/`.
+- لإضافة صفحة: أنشئ ملفًا جديدًا في `content/docs/` يبدأ بالترويسة التالية، واستخدم `weight` لتحديد ترتيبها في القائمة الجانبية:
+
+```toml
++++
+title = "عنوان الصفحة"
+date = 2026-11-28
+lastmod = 2026-11-28
+weight = 80
++++
 ```
 
-Run the project Locally in the development mode
+## الترخيص
 
-```bash
-   npm run dev
-```
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 
-or using yarn
+## التواصل
 
-```bash
-  yarn dev
-```
-
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run build
-```
-
-or if you are using yarn
-
-```bash
-  yarn build
-```
-
-## Contributing
-
-Contributions are always welcome!
-
-You can contribute to the content using the following:
-
-1. Go to this path: `cd examples/gatsby-theme-docs/src/docs/`
-2. Change the content of the markdown files. You can add sections, remove unused words, or edit the text.
-3. If you want to add a new page you have to to do 2 steps: first, add the new file in the docs folder. second, add the proper label and link in the sidebar file in this path:
-   `cd examples/gatsby-theme-docs/src/config/sidebar.yml`
-
-## Feedback
-
-If you have any feedback, please reach out to us at info[at]uxwritingar[dot]com.
-
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+لأي ملاحظات راسلنا على info[at]uxwritingar[dot]com.
