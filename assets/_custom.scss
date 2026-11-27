@@ -444,3 +444,46 @@ pre[class~='language-flow']::before {
 [dir='rtl'] img.book-icon[src$='forward.svg'] {
   transform: scaleX(-1);
 }
+
+/* زر طلب الخدمة أسفل القائمة الرئيسية */
+.csg-cta {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--csg-color-border);
+  border-radius: var(--csg-radius);
+  background: var(--csg-color-primary-tint);
+  text-align: center;
+}
+
+.csg-cta .csg-cta-lead {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--csg-color-title);
+}
+
+.csg-cta a.csg-cta-button {
+  display: block;
+  padding: 0.6rem 1rem;
+  border-radius: var(--csg-radius);
+  background: var(--csg-color-primary);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.csg-cta a.csg-cta-button:hover,
+.csg-cta a.csg-cta-button:focus-visible {
+  background: var(--csg-color-primary-dark);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.csg-cta .csg-cta-note {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #404040; /* تباين كافٍ على الخلفية البنفسجية الفاتحة */
+}
